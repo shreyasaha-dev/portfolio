@@ -1,0 +1,9 @@
+.total-projects {
+  padding: 150px;
+}
+.all-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

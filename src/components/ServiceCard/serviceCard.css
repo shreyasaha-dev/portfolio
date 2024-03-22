@@ -1,0 +1,43 @@
+.service-card {
+  width: 900px;
+  background-color: #181715;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-left: 3px solid #459a3c;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.service-left-section {
+  width: 70%;
+  background-color: #181715;
+  border-right: 1px solid rgb(68, 66, 66);
+  padding-right: 50px;
+}
+.service-left-section > h1 {
+  margin-bottom: 35px;
+  background-color: #181715;
+  color: white;
+}
+.service-left-section > h3 {
+  line-height: 1.7;
+  font-size: 17px;
+  background-color: #181715;
+}
+.service-right-section {
+  width: 30%;
+  background-color: #181715;
+  text-align: center;
+}
+.service-right-section > h4 {
+  color: #6a6969;
+  background-color: #181715;
+  margin-bottom: 15px;
+}
+.service-right-section > h2 {
+  color: #459a3c;
+  background-color: #181715;
+  font-size: 30px;
+}

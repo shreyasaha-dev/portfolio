@@ -1,0 +1,11 @@
+.total-intro > span {
+  font-family: "Gwendolyn", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #b9b6ab;
+  padding-bottom: 25px;
+  border-bottom: 2px gray solid;
+}
+.total-intro {
+  padding: 150px;
+}

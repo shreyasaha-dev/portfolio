@@ -1,0 +1,31 @@
+.total-about {
+  padding: 150px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 700px;
+}
+.about-details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.details > h3 {
+  color: #6a6969;
+  margin-right: 300px;
+  width: 40%;
+}
+.details > h4 {
+  color: white;
+  font-size: 20px;
+  width: 60%;
+}
+.border {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #6a6969;
+  cursor: pointer;
+}
