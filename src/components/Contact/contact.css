@@ -10,16 +10,20 @@
   margin-bottom: 50px;
   font-size: 25px;
 }
-.total-contact > h1 {
-  color: white;
+.total-contact > div {
   margin-bottom: 50px;
-  font-size: 30px;
-  cursor: pointer;
 }
-.total-contact > h4 {
+.total-contact > div > a {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.total-contact > a {
   color: rgb(173, 170, 170);
   border-bottom: 1px solid #6a6969;
-  width: 165px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
   padding-bottom: 5px;
-  cursor: pointer;
 }

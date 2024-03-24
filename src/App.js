@@ -8,12 +8,13 @@ import Contact from "./components/Contact/index.jsx";
 import Footer from "./components/Footer/index.jsx";
 import { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { actions } from "./Store/UserDataReducer.js";
 import Testimonials from "./components/Testimonials/index.jsx";
-
+import { FallingLines, MutatingDots } from "react-loader-spinner";
 const App = () => {
+  const [isLoader, setIsLoader] = useState(true);
   const dispatch = useDispatch();
   useEffect(() => {
     const getData = async () => {
@@ -23,13 +24,30 @@ const App = () => {
         );
         console.log(response.data.user);
         dispatch(actions.storeData(response.data.user));
+        setIsLoader(false);
       } catch (err) {
         console.log(err);
       }
     };
     getData();
   }, []);
-  return (
+  return isLoader ? (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
+      <FallingLines
+        color="#459a3c"
+        width="100"
+        visible={true}
+        ariaLabel="falling-circles-loading"
+      />
+    </div>
+  ) : (
     <div>
       <Landing />
       <Introduction />
@@ -40,6 +58,7 @@ const App = () => {
       <Services />
       <Contact />
       <Footer />
+      {/* <Toaster /> */}
     </div>
   );
 };

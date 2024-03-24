@@ -1,7 +1,7 @@
 .project-card {
   width: 320px;
   cursor: pointer;
-  margin: 12px;
+  margin: 13px;
   border: 1px solid rgb(63, 61, 61);
   transition: 0.5s;
 }

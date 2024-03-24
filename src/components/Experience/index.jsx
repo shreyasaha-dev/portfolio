@@ -8,7 +8,7 @@ const Experience = () => {
     <div className="total-experience">
       {userData?.timeline
         ?.filter((item) => {
-          if (item?.enabled) {
+          if (item?.enabled && !item?.forEducation) {
             return item;
           }
         })

@@ -4,7 +4,8 @@
 }
 .project-modal {
   background-color: white;
-  padding: 10px;
+  padding: 20px;
+  width: 600px;
 }
 .project-modal > img {
   width: 400px;
@@ -39,4 +40,7 @@
   font-weight: bold;
   text-decoration: none;
   color: #6a6969;
+}
+.url-section > a:hover {
+  color: #459a3c;
 }

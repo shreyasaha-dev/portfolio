@@ -17,11 +17,15 @@ const About = () => {
         </div>
         <div className="details">
           <h3>PHONE</h3>
-          <h4 className="border">{userData?.about?.phoneNumber}</h4>
+          <a href={`tel:${userData?.about?.phoneNumber}`} className="border">
+            {userData?.about?.phoneNumber}
+          </a>
         </div>
         <div className="details">
           <h3>EMAIL</h3>
-          <h4 className="border">{userData?.email}</h4>
+          <a href={`mailto:${userData?.email}`} className="border">
+            {userData?.email}
+          </a>
         </div>
         <div className="details">
           <h3>MY QUOTE</h3>

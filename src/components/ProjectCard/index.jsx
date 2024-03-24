@@ -1,12 +1,9 @@
 import "./projectCard.css";
-const ProjectCard = ({ projectNumber, feature, onOpenModal }) => {
+const ProjectCard = ({ projectNumber, feature, onOpenModal, image }) => {
   return (
     <div className="project-card" onClick={onOpenModal}>
       <div className="image">
-        <img
-          src={require("../../Images/gabrielle-henderson-T0d3UdwPkr0-unsplash.jpg")}
-          alt="project_picture"
-        />
+        <img src={image} alt="project_picture" />
       </div>
       <h3>{feature}</h3>
       <h2>{projectNumber}</h2>

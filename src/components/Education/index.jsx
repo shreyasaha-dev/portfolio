@@ -1,25 +1,29 @@
+import { useSelector } from "react-redux";
 import EducationCard from "../EducationCard";
+import moment from "moment";
 const Education = () => {
+  const userData = useSelector((state) => state.userData);
   return (
     <div className="total-education">
-      <EducationCard
-        university="FRENIFY UNIVERSITY"
-        subject="Computer Science"
-        date="( 2014 — 2017 )"
-        details="Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <EducationCard
-        university="FRENIFY UNIVERSITY"
-        subject="Computer Science"
-        date="( 2014 — 2017 )"
-        details="Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <EducationCard
-        university="FRENIFY UNIVERSITY"
-        subject="Computer Science"
-        date="( 2014 — 2017 )"
-        details="Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
+      {userData?.timeline
+        ?.filter((item) => {
+          if (item?.enabled && item?.forEducation) {
+            return item;
+          }
+        })
+        ?.map((element) => {
+          return (
+            <EducationCard
+              university={element?.company_name}
+              key={element?._id}
+              subject={element?.jobTitle}
+              date={`${moment(element?.startDate).format("YYYY")} - ${moment(
+                element?.endDate
+              ).format("YYYY")}`}
+              details={element?.summary}
+            />
+          );
+        })}
     </div>
   );
 };

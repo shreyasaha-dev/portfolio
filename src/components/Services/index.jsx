@@ -1,30 +1,33 @@
+import { useSelector } from "react-redux";
 import Heading from "../Heading";
 import ServiceCard from "../ServiceCard";
 import SubHeading from "../SubHeading";
 import Title from "../Title";
 import "./services.css";
 const Services = () => {
+  const userData = useSelector((state) => state.userData);
   return (
     <div className="total-service">
       <Title title="SERVICES" />
       <Heading heading="What I Do" />
-      <SubHeading subHeading="I develop 3D visuals, user interfaces and web applications" />
+      <SubHeading subHeading={userData?.about?.subTitle} />
       <div className="all-services">
-        <ServiceCard
-          name="App Development"
-          description="Design direction for business. Get your business on the next level. We help to create great experiences."
-          payment="$300"
-        />
-        <ServiceCard
-          name="App Development"
-          description="Design direction for business. Get your business on the next level. We help to create great experiences."
-          payment="$300"
-        />
-        <ServiceCard
-          name="App Development"
-          description="Design direction for business. Get your business on the next level. We help to create great experiences."
-          payment="$300"
-        />
+        {userData?.services
+          ?.filter((item) => {
+            if (item?.enabled) {
+              return item;
+            }
+          })
+          ?.map((element) => {
+            return (
+              <ServiceCard
+                name={element?.name}
+                description={element?.desc}
+                payment={element?.charge}
+                key={element?._id}
+              />
+            );
+          })}
       </div>
     </div>
   );

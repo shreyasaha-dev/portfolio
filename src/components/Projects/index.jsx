@@ -6,36 +6,41 @@ import "./project.css";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import ProjectModal from "../ProjectModal";
+import { useSelector } from "react-redux";
 const Projects = () => {
+  const userData = useSelector((state) => state.userData);
+  const [projectData, setProjectData] = useState({});
   const [open, setOpen] = useState(false);
-  const onOpenModal = () => setOpen(true);
+  const onOpenModal = (element) => {
+    setProjectData(element);
+    setOpen(true);
+  };
   const onCloseModal = () => setOpen(false);
   return (
     <div className="total-projects">
       <Title title="PORTFOLIO" />
       <Heading heading="Featured Projects" />
       <div className="all-projects">
-        <ProjectCard
-          onOpenModal={onOpenModal}
-          projectNumber="Project 1"
-          feature="Reactjs , Nextjs , Mern , CSS,"
-        />
-        <ProjectCard
-          projectNumber="Project 1"
-          feature="Reactjs , Nextjs , Mern , CSS,"
-        />
-        <ProjectCard
-          projectNumber="Project 1"
-          feature="Reactjs , Nextjs , Mern , CSS,"
-        />
-        <ProjectCard
-          projectNumber="Project 1"
-          feature="Reactjs , Nextjs , Mern , CSS,"
-        />
-        <ProjectCard
-          projectNumber="Project 1"
-          feature="Reactjs , Nextjs , Mern , CSS,"
-        />
+        {userData?.projects
+          ?.filter((item) => {
+            if (item?.enabled) {
+              return item;
+            }
+          })
+          ?.map((element) => {
+            return (
+              <ProjectCard
+                key={element?._id}
+                onOpenModal={() => {
+                  onOpenModal(element);
+                }}
+                image={element?.image?.url}
+                projectNumber={element?.title}
+                feature={element?.techStack.join(",")}
+              />
+            );
+          })
+          ?.reverse()}
       </div>
       <Modal
         open={open}
@@ -47,10 +52,12 @@ const Projects = () => {
         }}
       >
         <ProjectModal
-          projectName="Project 1"
-          description="Design direction for business. Get your business on the next level. We help to create great experiences."
-          website="portfolio3@gmail.com"
-          github="portfolio3@gmail.com"
+          projectName={projectData?.title}
+          description={projectData?.description}
+          website={projectData?.liveurl}
+          github={projectData?.githuburl}
+          image={projectData?.image?.url}
+          techStack={projectData?.techStack}
         />
       </Modal>
     </div>
