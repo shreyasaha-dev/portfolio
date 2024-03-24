@@ -13,7 +13,7 @@
 .experience-left-section > p {
   color: #6a6969;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
 }
 .experience-right-section {
   width: 65%;
@@ -25,7 +25,7 @@
 }
 .experience-right-section > p {
   color: rgb(173, 170, 170);
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 20px;
 }
 .total-experienceCard > span {

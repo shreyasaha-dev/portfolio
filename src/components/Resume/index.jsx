@@ -40,9 +40,6 @@ const Resume = () => {
       ) : (
         <Education />
       )}
-      {/* <Skills /> */}
-      {/* <Education /> */}
-      {/* <Experience /> */}
     </div>
   );
 };

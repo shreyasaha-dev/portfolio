@@ -10,6 +10,11 @@ const Contact = () => {
       <Heading heading="Get In Touch" />
       <SubHeading subHeading="I develop 3D visuals, user interfaces and web applications" />
       <ContactCard />
+      <p>ADDRESS</p>
+      <h2>Los Angeles , America</h2>
+      <p>PHONE</p>
+      <h1>(+123) 456-7890</h1>
+      <h4>portfolio3@gmail.com</h4>
     </div>
   );
 };

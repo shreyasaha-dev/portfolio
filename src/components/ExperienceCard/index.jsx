@@ -1,5 +1,5 @@
-import "./experienceCard.css";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import "./experienceCard.css";
 const ExperienceCard = ({ duration, companyName, position, details }) => {
   return (
     <div className="total-experienceCard">
@@ -12,7 +12,9 @@ const ExperienceCard = ({ duration, companyName, position, details }) => {
       </span>
       <div className="experience-right-section">
         <h3>{position}</h3>
-        <p>{details}</p>
+        {details?.map((item, i) => {
+          return <p key={i}>{item}</p>;
+        })}
       </div>
     </div>
   );

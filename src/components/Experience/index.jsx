@@ -1,26 +1,30 @@
+import { useSelector } from "react-redux";
 import ExperienceCard from "../ExperienceCard";
+import moment from "moment";
 
 const Experience = () => {
+  const userData = useSelector((state) => state.userData);
   return (
     <div className="total-experience">
-      <ExperienceCard
-        duration="March, 2024 - March, 2024"
-        companyName="CloudTech Innovations"
-        position="Software Developer"
-        details="Developed microservices using Node.js and deployed them using Docker containers.Implemented user authentication and authorization using OAuth 2.0 and JWT tokens.Integrated with cloud providers such as AWS and Azure to manage infrastructure resources.Designed and implemented RESTful APIs for various platform features.Collaborated with DevOps engineers to automate deployment and testing processes."
-      />
-      <ExperienceCard
-        duration="March, 2024 - March, 2024"
-        companyName="CloudTech Innovations"
-        position="Software Developer"
-        details="Developed microservices using Node.js and deployed them using Docker containers.Implemented user authentication and authorization using OAuth 2.0 and JWT tokens.Integrated with cloud providers such as AWS and Azure to manage infrastructure resources.Designed and implemented RESTful APIs for various platform features.Collaborated with DevOps engineers to automate deployment and testing processes."
-      />
-      <ExperienceCard
-        duration="March, 2024 - March, 2024"
-        companyName="CloudTech Innovations"
-        position="Software Developer"
-        details="Developed microservices using Node.js and deployed them using Docker containers.Implemented user authentication and authorization using OAuth 2.0 and JWT tokens.Integrated with cloud providers such as AWS and Azure to manage infrastructure resources.Designed and implemented RESTful APIs for various platform features.Collaborated with DevOps engineers to automate deployment and testing processes."
-      />
+      {userData?.timeline
+        ?.filter((item) => {
+          if (item?.enabled) {
+            return item;
+          }
+        })
+        ?.map((element) => {
+          return (
+            <ExperienceCard
+              duration={`${moment(element?.startDate).format(
+                "MMMM, YYYY"
+              )} - ${moment(element?.endDate).format("MMMM, YYYY")}`}
+              companyName={element?.company_name}
+              position={element?.jobTitle}
+              details={element?.bulletPoints}
+              key={element?._id}
+            />
+          );
+        })}
     </div>
   );
 };

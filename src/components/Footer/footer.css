@@ -1,0 +1,14 @@
+.footer-section {
+  padding: 40px 150px;
+  border-top: 1px solid #6a6969;
+}
+.footer-section > h3 {
+  color: #6a6969;
+  margin-bottom: 10px;
+}
+.footer-section > h3 > span {
+  color: #459a3c;
+  padding-bottom: 5px;
+  margin-bottom: 1px solid #6a6969;
+  cursor: pointer;
+}

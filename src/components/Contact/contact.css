@@ -1,3 +1,25 @@
 .total-contact {
   padding: 150px;
 }
+.total-contact > p {
+  color: #6a6969;
+  margin-bottom: 20px;
+}
+.total-contact > h2 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.total-contact > h1 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.total-contact > h4 {
+  color: rgb(173, 170, 170);
+  border-bottom: 1px solid #6a6969;
+  width: 165px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}

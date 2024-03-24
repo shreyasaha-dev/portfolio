@@ -1,11 +1,11 @@
 import "./skillCard.css";
-const SkillCard = () => {
+const SkillCard = ({ icon, name, percentage }) => {
   return (
     <div className="each-skill">
-      <img src={require("../../Images/download (1).jpg")} alt="icons" />
+      <img src={icon} alt="icons" />
       <div className="skill-details">
-        <p>HTML</p>
-        <h3>98%</h3>
+        <p>{name}</p>
+        <h3>{percentage}%</h3>
       </div>
     </div>
   );

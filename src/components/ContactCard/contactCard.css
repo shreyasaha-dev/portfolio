@@ -7,7 +7,7 @@
   align-items: flex-start;
   height: 222px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .contact-left-section {
   display: flex;
@@ -16,7 +16,7 @@
   align-items: center;
   width: 50%;
 }
-.contact-left-section > input {
+.input {
   width: 100%;
   padding: 20px;
   font-size: 18px;
@@ -26,7 +26,7 @@
   border: 1px solid rgb(71, 69, 69);
   color: white;
 }
-.contact-details > textarea {
+.textarea {
   padding: 20px;
   width: 50%;
   resize: none;
@@ -37,8 +37,11 @@
   margin-left: 15px;
   border: 1px solid rgb(71, 69, 69);
 }
+.error {
+  border: 2px solid rgb(136, 59, 59);
+}
 .contact-card > form > button {
-  padding: 15px 30px;
+  padding: 15px 50px;
   color: #459a3c;
   border: 2px solid #459a3c;
   cursor: pointer;
@@ -46,6 +49,7 @@
   font-size: 18px;
   box-shadow: 0 0 5px #459a3c;
   transition: 0.5s;
+  margin-bottom: 80px;
 }
 .contact-card > form > button:hover {
   color: white;

@@ -1,0 +1,42 @@
+.project-modal > h1 {
+  color: #459a3c;
+  background-color: white;
+}
+.project-modal {
+  background-color: white;
+  padding: 10px;
+}
+.project-modal > img {
+  width: 400px;
+  height: 200px;
+  margin: 15px 0;
+  background-color: white;
+}
+.project-modal > h4 {
+  color: #969292;
+  background-color: white;
+  width: 90%;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.project-modal > ul {
+  background-color: white;
+}
+.project-modal > ul > li {
+  background-color: white;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.url-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+.url-section > a {
+  background-color: white;
+  margin: 0 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #6a6969;
+}
