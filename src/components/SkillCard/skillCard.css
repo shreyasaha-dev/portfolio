@@ -20,3 +20,8 @@
 .skill-details > h3 {
   color: #459a3c;
 }
+@media only screen and (max-width: 768px) {
+  .each-skill {
+    width: 150px;
+  }
+}

@@ -10,3 +10,13 @@
 .color {
   border-radius: 10px;
 }
+@media only screen and (max-width: 1024px) {
+  .total-projects {
+    padding: 100px 150px 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-projects {
+    padding: 50px 80px 50px;
+  }
+}

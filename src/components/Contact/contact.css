@@ -27,3 +27,16 @@
   font-weight: bold;
   padding-bottom: 5px;
 }
+@media only screen and (max-width: 1024px) {
+  .total-contact {
+    padding: 90px 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-contact {
+    padding: 50px 80px;
+  }
+  .total-contact > div > a {
+    font-size: 35px;
+  }
+}

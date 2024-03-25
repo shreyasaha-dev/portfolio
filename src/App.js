@@ -6,13 +6,12 @@ import Projects from "./components/Projects/index.jsx";
 import Services from "./components/Services/index.jsx";
 import Contact from "./components/Contact/index.jsx";
 import Footer from "./components/Footer/index.jsx";
-import { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { actions } from "./Store/UserDataReducer.js";
 import Testimonials from "./components/Testimonials/index.jsx";
-import { FallingLines, MutatingDots } from "react-loader-spinner";
+import { FallingLines } from "react-loader-spinner";
 const App = () => {
   const [isLoader, setIsLoader] = useState(true);
   const dispatch = useDispatch();
@@ -58,7 +57,6 @@ const App = () => {
       <Services />
       <Contact />
       <Footer />
-      {/* <Toaster /> */}
     </div>
   );
 };

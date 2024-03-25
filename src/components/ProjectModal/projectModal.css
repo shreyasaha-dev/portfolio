@@ -44,3 +44,13 @@
 .url-section > a:hover {
   color: #459a3c;
 }
+@media only screen and (max-width: 768px) {
+  .project-modal {
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+  }
+  .project-modal > img {
+    width: 300px;
+  }
+}

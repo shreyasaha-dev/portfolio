@@ -30,3 +30,16 @@
   transition: 0.5s;
   background-image: linear-gradient(to left, #459a3c, #1d1b19);
 }
+@media only screen and (max-width: 1024px) {
+  .all-buttons {
+    margin-bottom: 90px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .resume-section {
+    padding: 30px 80px;
+  }
+  .all-buttons {
+    margin-bottom: 80px;
+  }
+}

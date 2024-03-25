@@ -41,3 +41,23 @@
   background-color: #181715;
   font-size: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  .service-card {
+    width: 670px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-card {
+    width: 570px;
+    padding: 40px;
+  }
+  .service-left-section > h1 {
+    margin-bottom: 25px;
+    font-size: 27px;
+    background-color: #181715;
+    color: white;
+  }
+  .service-left-section > h3 {
+    line-height: 1.5;
+  }
+}

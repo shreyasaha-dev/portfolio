@@ -32,3 +32,16 @@
   border-bottom: 1px solid #6a6969;
   cursor: pointer;
 }
+@media only screen and (max-width: 1024px) {
+  .total-about {
+    padding: 100px 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .total-about {
+    padding: 70px;
+  }
+  .details {
+    width: 650px;
+  }
+}
