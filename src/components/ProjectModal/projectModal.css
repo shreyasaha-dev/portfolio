@@ -54,3 +54,31 @@
     width: 300px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .project-modal {
+    padding: 5px;
+    width: 350px;
+  }
+  .project-modal > h1 {
+    font-size: 26px;
+  }
+  .project-modal > img {
+    width: 100%;
+  }
+  .project-modal > h4 {
+    width: 100%;
+    font-size: 17px;
+  }
+  .url-section > a {
+    margin: 0 13px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .project-modal {
+    padding: 0;
+    width: 230px;
+  }
+  .url-section {
+    margin-top: 5px;
+  }
+}

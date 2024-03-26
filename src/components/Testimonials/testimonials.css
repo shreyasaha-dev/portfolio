@@ -11,3 +11,13 @@
     padding: 0 80px 60px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .total-testimonial {
+    padding: 10px 45px 40px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .total-testimonial {
+    padding: 7px 25px 20px;
+  }
+}

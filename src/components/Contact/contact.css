@@ -40,3 +40,30 @@
     font-size: 35px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .total-contact {
+    padding: 40px 45px;
+  }
+  .total-contact > h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .total-contact > p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .total-contact > div > a {
+    font-size: 27px;
+  }
+  .total-contact > div {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .total-contact {
+    padding: 40px 25px;
+  }
+  .total-contact > div > a {
+    font-size: 25px;
+  }
+}

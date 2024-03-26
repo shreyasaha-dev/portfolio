@@ -59,3 +59,19 @@
     font-size: 28px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .total-experienceCard {
+    width: 100%;
+  }
+  .experience-right-section > h3 {
+    font-size: 26px;
+  }
+  .experience-right-section > p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .experience-right-section > p {
+    font-size: 17px;
+  }
+}

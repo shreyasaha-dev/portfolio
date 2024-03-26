@@ -62,3 +62,40 @@
     padding: 40px 80px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .total-landing {
+    padding: 40px 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing-left-section {
+    width: 100%;
+    order: 2;
+    margin-top: 10px;
+  }
+  .landing-right-section > img {
+    width: 330px;
+  }
+  .landing-left-section > h1 {
+    font-size: 75px;
+    margin: 30px 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .total-landing {
+    padding: 30px 25px;
+  }
+  .landing-right-section > img {
+    width: 230px;
+  }
+  .landing-left-section > h1 {
+    font-size: 60px;
+    margin: 25px 0;
+  }
+  .landing-left-section {
+    margin-top: 0;
+  }
+}
