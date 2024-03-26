@@ -42,7 +42,7 @@
     transition: 0.5s;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 450px) {
   .project-card > h2 {
     font-size: 25px;
   }

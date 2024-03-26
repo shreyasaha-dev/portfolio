@@ -84,25 +84,7 @@
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 480px) {
-  .testimonial-card {
-    width: 400px;
-  }
-  .testimonial-card > img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    margin-right: 20px;
-  }
-  .right-section > p {
-    padding: 18px;
-    font-size: 16px;
-  }
-  .right-section {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 450px) {
   .testimonial-card {
     width: 100%;
     margin-left: 20px;

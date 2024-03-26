@@ -43,28 +43,9 @@
     margin-bottom: 80px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 450px) {
   .resume-section {
     padding: 10px 45px;
-  }
-  .all-buttons {
-    margin-bottom: 50px;
-    justify-content: space-between;
-  }
-  .inactive {
-    font-size: 17px;
-    width: 31%;
-    padding: 13px;
-  }
-  .active {
-    font-size: 17px;
-    width: 31%;
-    padding: 13px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .resume-section {
-    padding: 10px 25px;
   }
   .all-buttons {
     display: flex;
@@ -82,5 +63,10 @@
     font-size: 20px;
     width: 80%;
     margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .resume-section {
+    padding: 10px 25px;
   }
 }
