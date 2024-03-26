@@ -57,7 +57,7 @@
 @media only screen and (max-width: 450px) {
   .project-modal {
     padding: 5px;
-    max-width: 300px;
+    max-width: 250px;
   }
   .project-modal > h1 {
     font-size: 26px;

@@ -27,7 +27,7 @@
 }
 @media only screen and (max-width: 450px) {
   .each-skill {
-    width: 130px;
+    width: 110px;
   }
   .skill-details {
     padding: 8px;

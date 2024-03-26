@@ -12,7 +12,7 @@
 }
 @media only screen and (max-width: 450px) {
   .subHeading > h2 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 40px;
     line-height: 1.5;
   }
