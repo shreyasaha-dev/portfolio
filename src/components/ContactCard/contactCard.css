@@ -55,6 +55,35 @@
   color: white;
   background-image: linear-gradient(to left, #459a3c, #1d1b19);
 }
+.alertMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+.alertMessage > h1 {
+  background-color: white;
+  color: #1d1b19;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.alertMessage > button {
+  background-color: #459a3c;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 13px 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.customModal {
+  background: white;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 1024px) {
   .contact-card {
     width: 720px;
@@ -63,7 +92,7 @@
     margin-bottom: 50px;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .contact-card {
     width: 500px;
   }
@@ -89,5 +118,24 @@
   }
   .contact-card > form > button {
     margin-bottom: 15px;
+  }
+  .alertMessage {
+    width: 300px;
+  }
+  .alertMessage > h1 {
+    font-size: 20px;
+  }
+  .alertMessage > button {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .alertMessage {
+    width: 250px;
+    padding: 0;
+  }
+  .alertMessage > h1 {
+    font-size: 18px;
   }
 }

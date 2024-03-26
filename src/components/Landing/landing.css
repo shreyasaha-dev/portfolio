@@ -54,12 +54,18 @@
     margin: 40px 0;
   }
   .landing-right-section > img {
-    width: 210px;
+    width: 250px;
   }
 }
 @media only screen and (max-width: 768px) {
   .total-landing {
     padding: 40px 80px;
+  }
+  .landing-right-section > img {
+    width: 210px;
+  }
+  .landing-left-section > h1 {
+    font-size: 75px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -77,7 +83,7 @@
     margin-top: 10px;
   }
   .landing-right-section > img {
-    width: 330px;
+    width: 300px;
   }
   .landing-left-section > h1 {
     font-size: 75px;
